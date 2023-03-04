@@ -20,32 +20,48 @@
         h1{
             font-size: 60px;
             text-align: center;
+            border-bottom: 1px solid gray;
+            margin:0;
+            padding: 20px;
+        }
+        #grid ol{
+            border-right:1px solid gray;
+            width:150px;
+            margin:0;
+            padding-left:30px;
+            font-size: 23px;
+            text-align: center;
+        }
+        body{
+            margin:0
+        }
+        #grid{
+            display:grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #article{
+            padding:35px;
+            padding-top: 0;
         }
     </style>
 </head>
 
 <body>
     <h1><a href="index.html">PROFILE</a></h1>
-    <img src="frofileimage.jpg" width="100%">
-    <ol>
-        <li><a href="okseungbae.html">옥승배</a></li>
-        <li><a href="hanna.html">박한나</a></li>
-        <li><a href="human2.html">human2</a></li>
-        <li><a href="human3.html">human3</a></li>
-    </ol>
-    <!--
-    <ol>
-        <li><a href="okseungbae.html">옥승배</a></li>
-        <li><a href="hanna.html">박한나</a></li>
-        <li><a href="human2.html">human2</a></li>
-        <li><a href="human3.html">human3</a></li>
-    </ol>
-    -->
-    <h2>프로필을 소개하는 공간입니다ㅎㅎ.</h2>
-    <p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </p>
-    
+    <div id="grid">
+        <ol>
+            <li><a href="okseungbae.html">옥승배</a></li>
+            <li><a href="hanna.html">박한나</a></li>
+            <li><a href="human2.html">human2</a></li>
+            <li><a href="human3.html">human3</a></li>
+        </ol>
+        <div id="article">
+            <h2>프로필을 소개하는 공간입니다ㅎㅎ.</h2>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </p>
+        </div>
+    </div>
     <p>
         <div id="disqus_thread"></div>
 <script>
